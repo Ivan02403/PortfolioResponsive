@@ -1,0 +1,301 @@
+*{
+	margin: 0;
+	padding:0;
+}
+
+body{
+	margin: 0;
+	padding:0;
+}
+/*****Navigation*****/
+header{
+	margin-top: 0;
+	background-color: black;
+	color:white;
+	font-family: 'Ubuntu', sans-serif;
+	padding: 15px;
+}
+
+header a{
+	color:white;
+	text-decoration: none;
+}
+
+
+nav{
+	padding-left: 20px;
+	padding-right: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+}
+
+.logo a{
+	color:white;
+	font-size: 2rem;
+}
+
+ul{
+	align-items: center;
+}
+
+li{
+	list-style: none;
+	display: inline-block;
+}
+
+li .naviList{
+	font-size: 1rem;
+	margin-right: 25px;
+	margin-left: 25px;
+	padding: 10px;
+	font-weight: 700;
+	/* padding-bottom: 0; */
+}
+
+.naviList:hover{
+	/* background-color: white;
+	color: #041C32; */
+	/* border-radius: 15px; */
+	border-bottom: 5px solid white;
+	transition: 0.3s;
+}
+
+.pic-position{
+	float: right;
+	/* border: 5px solid black; */
+	position: absolute;
+	top:14%;
+	left:55%;
+	padding: 0;
+	margin: 0;
+}
+
+.background-color{
+	background-color: black;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	
+}
+
+.profile{
+	height: 85vh;
+}
+
+.hero{
+	display: inline-block;
+	position: absolute;
+	top:40%;
+	left: 15%;;
+	text-align: center;
+}
+
+.head-title{
+	font-size: 5rem;
+	color: aliceblue;
+	font-family: 'Righteous', cursive;
+	letter-spacing: 5px;
+	
+}
+
+.head-info{
+	font-size:2rem ;
+	color:aliceblue;
+	font-family: 'Ubuntu', sans-serif;
+	
+	
+}
+.great{
+	text-align: center;
+	color:aliceblue;
+	font-family: 'Righteous', cursive;
+	font-size: 2rem;
+	/* position: absolute;
+	bottom:80%; */
+}
+
+#particles-js{
+	height: 100vh;
+	background-color: black;
+	
+}
+
+.head-particle{
+	border: 1px solid white;
+	position: absolute;
+	top:150%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 4rem;
+}
+
+.btn-botton{
+	padding: 10px;
+	border-radius: 10px;
+	float: left;
+	font-family: 'Righteous', cursive;
+}
+
+.demopadding {
+	margin:10px auto;
+	width:140px;
+	text-align:center;
+	
+  }
+
+.icon {
+	position:relative;
+	text-align:center;
+	width:0px;
+	height:0px;
+	padding:20px;
+	margin: 20px;
+	border-top-right-radius: 	20px;
+	border-top-left-radius: 	20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 	20px; 
+	-moz-border-radius: 		20px 20px 20px 20px;
+	-webkit-border-radius: 		20px 20px 20px 20px;
+	-khtml-border-radius: 		20px 20px 20px 20px; 	
+	color:#FFFFFF;
+}
+
+.icon i {
+	font-size:23px;
+	position:absolute;
+	left:9px;
+	top:10px;
+	
+	
+}
+
+.icon.social {
+	float:left;
+	margin:0 5px 0 0;
+	cursor:pointer;
+	background:white ;
+	color:#262626;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	
+}
+
+.icon.social:hover {
+	background:#262626 ;
+	color:white;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	-webkit-filter:	drop-shadow(0 1px 10px rgba(0,0,0,.8));
+	-moz-filter: 	drop-shadow(0 1px 10px rgba(0,0,0,.8));
+	-ms-filter: 		drop-shadow(0 1px 10px rgba(0,0,0,.8));
+	-o-filter: 		drop-shadow(0 1px 10px rgba(0,0,0,.8));
+	filter: 			drop-shadow(0 1px 10px rgba(0,0,0,.8));	 	
+}
+
+.fb{
+	position: relative;
+	right: 20%;
+}
+
+.gt{
+	position: relative;
+	left: 20%;
+}
+.icon.social.fb i {
+	left:13px;
+	top:10px;
+}
+.icon.social.ig i {
+	left:10px;
+}
+.icon.social.gt i {
+	left:10px;
+	top: 8px;
+	font-size: 25px;
+}
+
+.socmedlogo{
+	color:black;
+}
+.socmedlogo:hover{
+	color:white;
+}
+
+
+@media (max-width:600px){
+	.logo a{
+		color:white;
+		font-size: 1.5rem;
+		padding-bottom: 50px;
+	}
+
+	.robot{
+		display: none;
+	}
+
+	header{
+		/* background-color: aquamarine; */
+		display: block;
+	}
+
+	nav{
+	display: inline-block;
+	justify-content: space-around;
+	padding-left: 0px;
+	padding-right:0px;
+	}
+
+	
+li{
+	list-style: none;
+	display: inline;
+}
+
+li .naviList{
+	font-size: 13px;
+	margin-right:0px;
+	margin-left: 0px;
+	padding-left: 50px;
+	font-weight: 700;
+	/* padding-bottom: 0; */
+}
+
+.naviList:hover{
+	border-bottom: 0px solid white;
+}
+
+.profile{
+	display: none;
+}
+
+.hero{
+	position: absolute;
+	top:40%;
+	left: 7%;;
+	text-align: center;
+}
+
+.head-title{
+	font-size:3rem;
+	letter-spacing: 5px;
+	
+}
+
+.head-info{
+	font-size:1rem ;
+	color:aliceblue;
+	
+	
+}
+
+.logo{
+	margin-bottom: 20px;;
+}
+
+}
