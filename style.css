@@ -117,8 +117,9 @@ li .naviList{
 }
 
 #particles-js{
-	height: 100vh;
+	height: 87vh;
 	background-color: black;
+	/* position:absolute; */
 	
 }
 
