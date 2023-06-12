@@ -1,16 +1,21 @@
 *{
 	margin: 0;
 	padding:0;
+	box-sizing: border-box;
 }
 
 body{
 	margin: 0;
 	padding:0;
 }
+
+html{
+	overflow-y: scroll;
+}
 /*****Navigation*****/
 header{
 	margin-top: 0;
-	background-color: black;
+	background-color: navy;
 	color:white;
 	font-family: 'Ubuntu', sans-serif;
 	padding: 15px;
@@ -28,6 +33,7 @@ nav{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	
 	
 }
 
@@ -49,7 +55,7 @@ li .naviList{
 	font-size: 1rem;
 	margin-right: 25px;
 	margin-left: 25px;
-	padding: 10px;
+	padding: 5px;
 	font-weight: 700;
 	/* padding-bottom: 0; */
 }
@@ -62,14 +68,18 @@ li .naviList{
 	transition: 0.3s;
 }
 
+/* .home-active{
+	border-bottom: 5px solid white;
+} */
+
 .pic-position{
 	float: right;
 	/* border: 5px solid black; */
 	position: absolute;
 	top:14%;
 	left:55%;
-	padding: 0;
-	margin: 0;
+	padding-bottom: 0;
+	margin-bottom: 0;
 }
 
 .background-color{
@@ -81,7 +91,9 @@ li .naviList{
 }
 
 .profile{
-	height: 85vh;
+	height: 86vh;
+	padding-bottom: 0;
+	margin-bottom: 0;
 }
 
 .hero{
@@ -290,6 +302,213 @@ footer{
 	padding-bottom: 0;
 }
 
+/*****About Me*****/
+/* .aboutMe-active{
+	border-bottom: 5px solid white;
+} */
+
+.aboutMe-Head{
+	font-size: 2rem;
+	font-family: 'Righteous', cursive;
+	width: 50%;
+	position: relative;
+	top:15%;
+	padding-left: 25px;
+	
+}
+
+.aboutMe-div > h1{
+	position: absolute;
+	top:15%;
+}
+
+.aboutMe-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	color:aliceblue;
+	
+	
+}
+
+.textbox{
+	border-radius: 20px;
+	text-align: justify;
+}
+
+.wrapper{
+	
+	background-color: black;
+	margin:170px auto;
+	width: 75%;
+	padding: 30px;
+	border-radius: 20px;
+	position: relative;
+	bottom: 10%;
+	
+}
+
+.textbox h2{
+	font-size: 2.5rem;
+}
+
+.textbox p{
+	font-size: 1rem;
+}
+
+.aboutMe-pic{
+	float: left;
+	max-width:500px;
+	border: 2px solid whitesmoke;
+	border-radius: 20px;
+	margin-right: 10px;
+}
+
+/*****Contact*****/
+.contact-Head{
+	font-size: 2rem;
+	font-family: 'Righteous', cursive;
+	width: 50%;
+	position: absolute;
+	top:15%;
+	padding-left: 25px;
+	color: whitesmoke;
+	
+}
+
+
+.contact{
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	/* color: aliceblue; */
+	background-color: black;
+	padding: 10px;
+	font-family: 'Righteous', cursive;
+}
+
+.contact-container{
+	max-width: 700px;
+	width: 100%;
+	background-color: white;
+	padding: 25px 30px;
+	border-radius: 5px;
+	position: relative;
+	top: 10%;
+}
+
+.contact-container .contact-title{
+	font-size: 1.5rem;
+	font-weight: 500;
+	position: relative;
+}
+
+.contact-container .contact-title::before{
+	content: '';
+	position:absolute;
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width: 30px;
+	background-color: black;
+}
+
+.contact-container form .user-details{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-around;
+	/* font-size: 1em; */
+	margin:20px 0 12px 0 ;
+}
+
+form .user-details .input-box{
+	width: cal(100% / 2 - 20px);
+	margin-bottom: 15px;
+	
+}
+
+.user-details .input-box input{
+	height: 45px;
+	width: 100%;
+	outline: none;
+	border-radius: 5px;
+	padding-left: 15px;
+	font-size: 1rem;
+}
+
+textarea{
+	font-size: 1rem;
+	padding-left: 15px;}
+
+
+.user-details .input-box .details{
+	margin-bottom: 5px;
+	display: block;
+}
+
+.btn{
+	padding: 10px;
+	width: 50%;
+	color: aliceblue;
+	background-color: black;
+	border-radius: 15px;
+}
+
+.btn:hover{
+	background-color: gray;
+}
+
+.center-btn{
+	display: flex;
+	justify-content: center;
+}
+
+
+
+
+/* .user-details{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: green;
+	text-align: left;
+	
+	
+}
+
+.user-details input{
+	padding: 10px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	
+}
+
+.user-details label{
+	
+	margin-right: 20px;
+	
+} */
+
+#message{
+	padding-bottom: 120px;
+	padding-right: 50px;
+	height: 200px;
+	margin: 0;
+	width: 100%;
+}
+
+
+.input-box{
+	margin: 10px;
+	position: relative;
+	bottom: 20%;
+}
+
+
 
 @media (max-width:600px){
 	.logo a{
@@ -378,6 +597,20 @@ ul{
 	gap: 50px;
 	position: relative;
 	top:6%;
+}
+
+.aboutMe-container{
+	position: absolute;
+	top:40%;
+}
+
+.wrapper{
+	width: 80%;
+}
+
+.contact-container{
+	position: relative;
+	top:20%
 }
 
 }
