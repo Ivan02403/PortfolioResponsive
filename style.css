@@ -541,9 +541,10 @@ li{
 
 li .naviList{
 	font-size: 15px;
-	margin-right:0px;
-	margin-left: 0px;
-	padding-left: 30px;
+	margin-right:5px;
+	margin-left: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
 	font-weight: 700;
 
 	/* padding-bottom: 0; */
@@ -617,6 +618,10 @@ ul{
 	top:1%;
 	
 	width: 90%;
+}
+
+.contact-container{
+	top:25%
 }
 
 }
