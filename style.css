@@ -317,9 +317,13 @@ footer{
 	
 }
 
+.aboutMe{
+	height: 100vh;
+}
+
 .aboutMe-div > h1{
 	position: absolute;
-	top:15%;
+	top:20%;
 }
 
 .aboutMe-container{
@@ -524,6 +528,7 @@ textarea{
 	header{
 		/* background-color: aquamarine; */
 		display: block;
+		width: 100%;
 	}
 
 	nav{
@@ -601,7 +606,7 @@ ul{
 }
 
 .aboutMe-container{
-	position: absolute;
+	position: relative;
 	top:40%;
 }
 
@@ -617,7 +622,7 @@ ul{
 .wrapper{
 	top:1%;
 	
-	width: 90%;
+	width: 100%;
 }
 
 .contact-container{
